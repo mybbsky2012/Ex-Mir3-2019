@@ -46,7 +46,7 @@ namespace Server.Envir
             SessionID = ++SessionCount;
 
 
-            Language = (StringMessages) ConfigReader.ConfigObjects[typeof(EnglishMessages)]; //Todo Language Selections
+            Language = (StringMessages) ConfigReader.ConfigObjects[typeof(ThaiMessages)]; //Todo Language Selections
 
             OnException += (o, e) =>
             {
@@ -229,11 +229,11 @@ namespace Server.Envir
         {
             switch (p.Language.ToUpper())
             {
+                case "THAI":
+                    Language = (StringMessages)ConfigReader.ConfigObjects[typeof(ThaiMessages)]; //Todo Language Selections
+                    break;
                 case "ENGLISH":
                     Language = (StringMessages)ConfigReader.ConfigObjects[typeof(EnglishMessages)]; //Todo Language Selections
-                    break;
-                case "CHINESE":
-                    Language = (StringMessages)ConfigReader.ConfigObjects[typeof(ChineseMessages)]; //Todo Language Selections
                     break;
             }
 

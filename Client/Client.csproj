@@ -9,7 +9,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Client</RootNamespace>
-    <AssemblyName>Zircon</AssemblyName>
+    <AssemblyName>ExMir3</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -36,7 +36,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Zircon.ico</ApplicationIcon>
+    <ApplicationIcon>ExMir3.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
@@ -78,7 +78,7 @@
     <Compile Include="Envir\DXManager.cs" />
     <Compile Include="Envir\DXSound.cs" />
     <Compile Include="Envir\DXSoundManager.cs" />
-    <Compile Include="Envir\Translations\ChineseMessages.cs" />
+    <Compile Include="Envir\Translations\ThaiMessages.cs" />
     <Compile Include="Envir\Translations\EnglishMessages.cs" />
     <Compile Include="Envir\Translations\StringMessages.cs" />
     <Compile Include="Models\MirLibrary.cs" />
@@ -177,7 +177,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Zircon.ico" />
+    <Content Include="ExMir3.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

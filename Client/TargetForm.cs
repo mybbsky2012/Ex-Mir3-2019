@@ -22,15 +22,15 @@ namespace Client
     public sealed class TargetForm : RenderForm
     {
         public bool Resizing { get; private set; }
-        public TargetForm() : base("Zircon Client")
+        public TargetForm() : base("ExMir3 Client")
         {
             AutoScaleMode = AutoScaleMode.None;
 
             AutoScaleDimensions = new SizeF(96F, 96F);
 
-            ClientSize = new Size(1024, 768);
+            ClientSize = new Size(800, 600);
             
-            Icon = Properties.Resources.Zircon;
+            Icon = Properties.Resources.ExMir3;
             
             FormBorderStyle = (Config.FullScreen || Config.Borderless) ? FormBorderStyle.None : FormBorderStyle.FixedSingle;
 

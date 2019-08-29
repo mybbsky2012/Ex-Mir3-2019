@@ -8,12 +8,12 @@ using Library;
 
 namespace Client.Envir
 {
-    [ConfigPath(@".\Zircon.ini")]
+    [ConfigPath(@".\ExMir3.ini")]
     public static class Config
     {
-        public static readonly Size IntroSceneSize = new Size(1024, 768);
+        public static readonly Size IntroSceneSize = new Size(800, 600);
         
-        public const string DefaultIPAddress = "145.239.204.13";
+        public const string DefaultIPAddress = "127.0.0.1";
         public const int DefaultPort = 7100;
 
         [ConfigSection("Network")]
@@ -34,7 +34,7 @@ namespace Client.Envir
         public static bool ClipMouse { get; set; } = false;
         public static bool DebugLabel { get; set; } = false;
         public static float FontSizeMod { get; set; } = 0.0F;
-        public static string Language { get; set; } = "English";
+        public static string Language { get; set; } = "Thai";
         public static bool Borderless { get; set; } = false;
 
 

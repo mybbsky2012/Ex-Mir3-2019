@@ -2,8 +2,8 @@
 
 namespace Server.Envir.Translations
 {
-    [ConfigPath(@".\Translations\ChineseMessages.ini")]
-    public class ChineseMessages : StringMessages
+    [ConfigPath(@".\Translations\ThaiMessages.ini")]
+    public class ThaiMessages : StringMessages
     {
         public override string BannedWrongPassword { get; set; } = "Too many wrong password login attempts.";
 
@@ -49,8 +49,8 @@ namespace Server.Envir.Translations
         public override string GroupRecallDisabled { get; set; } = "Group Recall Disabled.";
 
 
-        public override string NeedLevel { get; set; } = "You need to be level {0} to proceed.";
         public override string NeedMaxLevel { get; set; } = "You need to be level {0} or lower to proceed.";
+        public override string NeedLevel { get; set; } = "You need to be level {0} to proceed.";
         public override string NeedItem { get; set; } = "You require a '{0}' to proceed.";
         public override string NeedMonster { get; set; } = "The way is blocked...";
 
@@ -79,8 +79,8 @@ namespace Server.Envir.Translations
         public override string ConnotResetCompanionSkill { get; set; } = "To use {0} please type '@EnableLevel{1}'";
         public override string LearnBookFailed { get; set; } = "Failed to learn skill, not enough pages";
         public override string LearnBookSuccess { get; set; } = "Congratulations, You have successfully learned {0}.";
-        public override string LearnBook4Failed { get; set; } = "Failed to learn level {0} skill.";
-        public override string LearnBook4Success { get; set; } = "Congratulations, You have successfully learned level {1} {0}.";
+        public override string LearnBook4Failed { get; set; } = "Failed to learn level 4 skill.";
+        public override string LearnBook4Success { get; set; } = "Congratulations, You have successfully learned level 4 {0}.";
         public override string StorageSafeZone { get; set; } = "You cannot access storage outside of SafeZone.";
         public override string GuildStoragePermission { get; set; } = "You do no have the permissions to take from the guild storage";
         public override string GuildStorageSafeZone { get; set; } = "You cannot use guild storage unless you are in a safe zone";
@@ -191,7 +191,7 @@ namespace Server.Envir.Translations
         public override string GuildConquestSuccess { get; set; } = "A guild has submitted a conquest war for your castle.";
         public override string GuildConquestDate { get; set; } = "Your guild has submitted a conquest war for {0}.";
         public override string GuildJoinGuild { get; set; } = "You are already in a guild.";
-        public override string GuildJoinTime { get; set; } = "You cannot join a guild a for another {0}";
+        public override string GuildJoinTime { get; set; } = "You cannot join a guild for another {0}";
         public override string GuildJoinNoGuild { get; set; } = "Player: {0}, is no longer in a guild.";
         public override string GuildJoinPermission { get; set; } = "Player: {0}, does not have permission to add you to the guild.";
         public override string GuildJoinNoRoom { get; set; } = "{0}'s group has already reached the maximum size.";
@@ -274,7 +274,7 @@ namespace Server.Envir.Translations
         public override string NPCRefineFailed { get; set; } = "Unfortunately, Your refine was not successful";
         public override string NPCMasterRefineGold { get; set; } = "You do not have enough gold to request a master refine evaluation, Cost: {0:#,##0}.";
         public override string NPCMasterRefineChance { get; set; } = "Your chance of success is: {0}%";
-
+        
 
         public override string ChargeExpire { get; set; } = "The energy for {0} has left your weapon.";
         public override string ChargeFail { get; set; } = "Failed to gether the energy to charge {0}.";
